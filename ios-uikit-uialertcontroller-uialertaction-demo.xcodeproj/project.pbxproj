@@ -13,6 +13,9 @@
 		964511121E56B26300A3C135 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 964511111E56B26300A3C135 /* Assets.xcassets */; };
 		964511151E56B26300A3C135 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 964511131E56B26300A3C135 /* LaunchScreen.storyboard */; };
 		964511201E56B26300A3C135 /* ios_uikit_uialertcontroller_uialertaction_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9645111F1E56B26300A3C135 /* ios_uikit_uialertcontroller_uialertaction_demoTests.swift */; };
+		B6ABBADF1EAD23100013931C /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6ABBADE1EAD23100013931C /* UIAlertController.swift */; };
+		B6ABBAE31EAD303E0013931C /* AlertDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6ABBAE21EAD303E0013931C /* AlertDemoViewController.swift */; };
+		B6ABBAE51EAD30480013931C /* AlertDemoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6ABBAE41EAD30480013931C /* AlertDemoViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		9645111B1E56B26300A3C135 /* ios-uikit-uialertcontroller-uialertaction-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-uikit-uialertcontroller-uialertaction-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9645111F1E56B26300A3C135 /* ios_uikit_uialertcontroller_uialertaction_demoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_uikit_uialertcontroller_uialertaction_demoTests.swift; sourceTree = "<group>"; };
 		964511211E56B26300A3C135 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6ABBADE1EAD23100013931C /* UIAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
+		B6ABBAE21EAD303E0013931C /* AlertDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertDemoViewController.swift; sourceTree = "<group>"; };
+		B6ABBAE41EAD30480013931C /* AlertDemoViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AlertDemoViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +65,9 @@
 		964510FE1E56B26300A3C135 = {
 			isa = PBXGroup;
 			children = (
+				964511081E56B26300A3C135 /* Products */,
 				964511091E56B26300A3C135 /* ios-uikit-uialertcontroller-uialertaction-demo */,
 				9645111E1E56B26300A3C135 /* ios-uikit-uialertcontroller-uialertaction-demoTests */,
-				964511081E56B26300A3C135 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +83,9 @@
 		964511091E56B26300A3C135 /* ios-uikit-uialertcontroller-uialertaction-demo */ = {
 			isa = PBXGroup;
 			children = (
-				9645110A1E56B26300A3C135 /* AppDelegate.swift */,
-				9645110C1E56B26300A3C135 /* ViewController.swift */,
-				9645110E1E56B26300A3C135 /* Main.storyboard */,
-				964511111E56B26300A3C135 /* Assets.xcassets */,
-				964511131E56B26300A3C135 /* LaunchScreen.storyboard */,
-				964511161E56B26300A3C135 /* Info.plist */,
+				B6ABBAE01EAD2D9A0013931C /* Controllers */,
+				B6ABBADD1EAD22FA0013931C /* Extensions */,
+				B6ABBAE71EAD3BCB0013931C /* Others */,
 			);
 			path = "ios-uikit-uialertcontroller-uialertaction-demo";
 			sourceTree = "<group>";
@@ -90,10 +93,64 @@
 		9645111E1E56B26300A3C135 /* ios-uikit-uialertcontroller-uialertaction-demoTests */ = {
 			isa = PBXGroup;
 			children = (
-				9645111F1E56B26300A3C135 /* ios_uikit_uialertcontroller_uialertaction_demoTests.swift */,
 				964511211E56B26300A3C135 /* Info.plist */,
+				9645111F1E56B26300A3C135 /* ios_uikit_uialertcontroller_uialertaction_demoTests.swift */,
 			);
 			path = "ios-uikit-uialertcontroller-uialertaction-demoTests";
+			sourceTree = "<group>";
+		};
+		B6ABBADD1EAD22FA0013931C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B6ABBADE1EAD23100013931C /* UIAlertController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B6ABBAE01EAD2D9A0013931C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B6ABBAE61EAD304C0013931C /* AlertDemoViewController */,
+				B6ABBAE11EAD2DAA0013931C /* Main */,
+				B6ABBAE81EAD3BD80013931C /* Startup */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B6ABBAE11EAD2DAA0013931C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9645110E1E56B26300A3C135 /* Main.storyboard */,
+				9645110C1E56B26300A3C135 /* ViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B6ABBAE61EAD304C0013931C /* AlertDemoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B6ABBAE41EAD30480013931C /* AlertDemoViewController.storyboard */,
+				B6ABBAE21EAD303E0013931C /* AlertDemoViewController.swift */,
+			);
+			path = AlertDemoViewController;
+			sourceTree = "<group>";
+		};
+		B6ABBAE71EAD3BCB0013931C /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				9645110A1E56B26300A3C135 /* AppDelegate.swift */,
+				964511111E56B26300A3C135 /* Assets.xcassets */,
+				964511161E56B26300A3C135 /* Info.plist */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		B6ABBAE81EAD3BD80013931C /* Startup */ = {
+			isa = PBXGroup;
+			children = (
+				964511131E56B26300A3C135 /* LaunchScreen.storyboard */,
+			);
+			path = Startup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				964511151E56B26300A3C135 /* LaunchScreen.storyboard in Resources */,
+				B6ABBAE51EAD30480013931C /* AlertDemoViewController.storyboard in Resources */,
 				964511121E56B26300A3C135 /* Assets.xcassets in Resources */,
 				964511101E56B26300A3C135 /* Main.storyboard in Resources */,
 			);
@@ -201,7 +259,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6ABBAE31EAD303E0013931C /* AlertDemoViewController.swift in Sources */,
 				9645110D1E56B26300A3C135 /* ViewController.swift in Sources */,
+				B6ABBADF1EAD23100013931C /* UIAlertController.swift in Sources */,
 				9645110B1E56B26300A3C135 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,6 +291,7 @@
 				9645110F1E56B26300A3C135 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		964511131E56B26300A3C135 /* LaunchScreen.storyboard */ = {
@@ -239,6 +300,7 @@
 				964511141E56B26300A3C135 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -342,8 +404,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PCCZJUYRT6;
-				INFOPLIST_FILE = "ios-uikit-uialertcontroller-uialertaction-demo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				INFOPLIST_FILE = "ios-uikit-uialertcontroller-uialertaction-demo/Others/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures.ios-uikit-uialertcontroller-uialertaction-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -356,8 +418,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PCCZJUYRT6;
-				INFOPLIST_FILE = "ios-uikit-uialertcontroller-uialertaction-demo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				INFOPLIST_FILE = "ios-uikit-uialertcontroller-uialertaction-demo/Others/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures.ios-uikit-uialertcontroller-uialertaction-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -414,6 +476,7 @@
 				964511261E56B26300A3C135 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		964511271E56B26300A3C135 /* Build configuration list for PBXNativeTarget "ios-uikit-uialertcontroller-uialertaction-demoTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +485,7 @@
 				964511291E56B26300A3C135 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

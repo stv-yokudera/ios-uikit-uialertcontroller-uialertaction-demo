@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
     
     /// アラート
     let alert = UIAlertController(title: "タイトル",
@@ -28,14 +28,18 @@ class ViewController: UIViewController {
     /// ディストラクティブ（複数セット可能。アクションによってデータに破壊的な変更が発生する可能性あり）
     let destructiveAction = UIAlertAction(title: "destructive", style: .destructive) { _ in print("destructive") }
     
+    // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
     }
+}
+
+extension ViewController {
     
-    // MARK: setup
+    // MARK: - Setup
     
-    private func setup() {
+    func setup() {
         // アラートにアクションをセットする
         alert.addAction(cancelAction)
         alert.addAction(defaultAction)
@@ -52,7 +56,7 @@ class ViewController: UIViewController {
         actionSheet.addAction(destructiveAction)
     }
     
-    // MARK: ButtonAction
+    // MARK: - Actions
     
     @IBAction func didTapAlet(_ sender: UIButton) {
         // アラートを表示する
@@ -64,4 +68,3 @@ class ViewController: UIViewController {
         present(actionSheet, animated: true, completion: nil)
     }
 }
-
